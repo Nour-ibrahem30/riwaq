@@ -1,0 +1,9 @@
+.git
+node_modules
+android
+ios
+riwaq.local.json
+.env*
+*.pdf
+*.zip
+Start.*
