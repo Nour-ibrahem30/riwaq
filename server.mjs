@@ -3,7 +3,7 @@ import {readFileSync,createReadStream,statSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {dirname,resolve,relative,isAbsolute} from 'node:path';
 const here=dirname(fileURLToPath(import.meta.url));
-const tracks=JSON.parse(readFileSync(resolve(here,'src/library.json'),'utf8'));
+const tracks=JSON.parse(readFileSync(resolve(here,'seed/library.json'),'utf8'));
 let local={};try{local=JSON.parse(readFileSync(resolve(here,'riwaq.local.json'),'utf8'))}catch{}
 const libraryRoot=resolve(process.env.RIWAQ_LIBRARY_DIR||local.libraryRoot||resolve(here,'books'));
 const files=new Map(tracks.flatMap(t=>t.books).filter(b=>!b.pending).map(b=>{const file=resolve(libraryRoot,...b.id.split(/[\\/]/));const rel=relative(libraryRoot,file);if(rel.startsWith('..')||isAbsolute(rel))throw Error('Invalid library entry');return[b.id,file]}));
