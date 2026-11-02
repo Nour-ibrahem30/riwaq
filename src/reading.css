@@ -13,3 +13,5 @@
 @media(min-width:361px) and (max-width:760px){.discovery-hero{min-height:310px;padding:24px}.discovery-copy h2{font-size:31px;max-width:190px;margin:15px 0 10px}.discovery-copy p{font-size:9px;max-width:180px}.discovery-copy .primary{margin-top:18px}.hero-art{left:-12px;top:70px;width:165px;height:170px;transform:rotate(5deg)}.hero-cover{width:75px}.cover-0{left:0;top:35px}.cover-1{left:43px;top:5px;width:94px}.cover-2{left:106px;top:43px;width:72px}.hero-caption{right:auto;left:20px;bottom:21px}.hero-caption>span{display:none}.hero-caption strong{font-size:25px}.hero-caption small{font-size:7px}}
 
 .hero-art{z-index:0}
+
+.brand-mark{background:none;border:0;transform:none}.brand-mark img{width:100%;height:100%;object-fit:cover;border-radius:13px}
