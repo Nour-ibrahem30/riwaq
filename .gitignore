@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.log
+riwaq.local.json
+.env*
+*.pdf
+*.zip
+android/.gradle/
+android/local.properties
+android/**/build/
+ios/App/Pods/
+ios/App/App/public/
+android/app/src/main/assets/public/
+*.keystore
+*.jks

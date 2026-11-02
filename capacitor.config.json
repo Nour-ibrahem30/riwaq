@@ -1,0 +1,12 @@
+{
+  "appId": "com.riwaq.reading",
+  "appName": "رِواق",
+  "webDir": "dist",
+  "backgroundColor": "#1e2926",
+  "ios": {
+    "contentInset": "automatic"
+  },
+  "android": {
+    "backgroundColor": "#1e2926"
+  }
+}

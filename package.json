@@ -1,0 +1,33 @@
+{
+  "name": "riwaq",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "start": "node server.mjs",
+    "mobile:sync": "npm run build && cap sync",
+    "android": "npm run mobile:sync && cap open android",
+    "ios": "npm run mobile:sync && cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/ios": "^8.6.0",
+    "@fontsource/amiri": "^5.3.0",
+    "@fontsource/ibm-plex-sans-arabic": "^5.3.0",
+    "@xyflow/react": "*",
+    "lucide-react": "*",
+    "motion": "*",
+    "pdfjs-dist": "^6.5.438",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0",
+    "@vitejs/plugin-react": "*",
+    "vite": "*",
+    "vite-plugin-singlefile": "*"
+  }
+}
